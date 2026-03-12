@@ -1,49 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-<title>DewWork</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DewWork - หางานสำหรับแรงงานต่างชาติ</title>
 
 <style>
 
 body{
 font-family:Arial;
-background:#f2f2f2;
 margin:0;
-text-align:center;
+background:#f4f6f9;
 }
 
 header{
-background:#0a7ea4;
+background:#1e73be;
 color:white;
-padding:25px;
-font-size:30px;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:16px;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+background:#e9f2fb;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.btn{
+padding:14px 25px;
+border-radius:8px;
+text-decoration:none;
+margin:10px;
+display:inline-block;
+}
+
+.btn-blue{
+background:#1e73be;
+color:white;
+}
+
+.btn-green{
+background:#2ecc71;
+color:white;
 }
 
 .container{
-padding:20px;
+width:90%;
+max-width:1000px;
+margin:auto;
+margin-top:40px;
 }
 
 .job{
 background:white;
 padding:20px;
-margin:20px;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.btn{
-background:#0a7ea4;
+.job h3{
+margin:0;
+}
+
+.apply{
+margin-top:15px;
+background:#06C755;
 color:white;
-padding:12px 20px;
-border-radius:8px;
+padding:10px 20px;
+border-radius:6px;
 text-decoration:none;
 display:inline-block;
-margin-top:10px;
-}
-
-.line{
-background:#06C755;
 }
 
 </style>
@@ -51,35 +97,58 @@ background:#06C755;
 
 <body>
 
-<header>DewWork</header>
+<header>
+
+<div class="logo">DewWork</div>
+
+<nav>
+<a href="#">ค้นหางาน</a>
+<a href="#">ลงประกาศงาน</a>
+<a href="#">เข้าสู่ระบบ</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>หางานในไทย สำหรับแรงงานต่างชาติ</h1>
+
+<a class="btn btn-blue" href="#">🔍 หางาน</a>
+<a class="btn btn-green" href="#">➕ ลงประกาศงาน</a>
+
+</section>
+
 
 <div class="container">
-
-<h2>หางานง่าย ได้งานไว</h2>
 
 <div class="job">
 <h3>งานก่อสร้าง</h3>
 <p>ค่าแรง 500 บาท / วัน</p>
 <p>สมุทรปราการ</p>
-<a class="btn line" href="#">สมัครงานผ่าน LINE</a>
+
+<a class="apply" href="https://line.me">สมัครผ่าน LINE</a>
 </div>
+
 
 <div class="job">
 <h3>งานโรงงาน</h3>
 <p>ค่าแรง 400 บาท / วัน</p>
-<p>กรุงเทพ</p>
-<a class="btn line" href="#">สมัครงานผ่าน LINE</a>
+<p>ชลบุรี</p>
+
+<a class="apply" href="https://line.me">สมัครผ่าน LINE</a>
 </div>
 
+
 <div class="job">
-<h3>งานแบกปูน</h3>
-<p>ค่าแรง 450 บาท / วัน</p>
-<p>บางนา</p>
-<a class="btn line" href="#">สมัครงานผ่าน LINE</a>
+<h3>งานขนของ</h3>
+<p>ค่าแรง 600 บาท / วัน</p>
+<p>กรุงเทพ</p>
+
+<a class="apply" href="https://line.me">สมัครผ่าน LINE</a>
 </div>
 
 </div>
 
 </body>
 </html>
-
